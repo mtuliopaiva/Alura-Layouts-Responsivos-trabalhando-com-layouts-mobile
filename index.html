@@ -20,6 +20,7 @@
         <link href="css/base.css" rel="stylesheet">
         <link href="css/cabecalho.css" rel="stylesheet">
         <link href="css/chamada.css" rel="stylesheet">
+        <link href="css/destaques.css" rel="stylesheet">
         
     </head>
     <body>
@@ -53,11 +54,33 @@
             </nav>
         </header>
         <main>
-            <section class="chamada conteiner">
+            <section class="chamada container">
                 <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
                 <p class="chamada__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
                 <a href="#" class="chamada__botao botao">Conheça os planos</a>
             </section>
+            
+            <!-- section.destaques.container>h2.destaques__titulo+(a*2>figure.destaques__painel>
+                img.destaques__painel-imagem+figc.destaques__painel-texto)+a.destaques__
+                botao -->
+                <!-- Ponto serve para dar nome as classes, () serve para separar -->
+            <section class="destaques container">
+                <h2 class="destaques__titulo">Destaques</h2>
+                <a href="#">
+                    <figure class="destaques__painel">
+                        <img src="img/comecando-criar-logotipo.png" alt="Painel do post sobre criação de logotipo" class="destaques__painel-imagem">
+                        <figcaption class="destaques__painel-texto">Conheça as primeiras etapas para a criação de um logotipo</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="destaques__painel">
+                        <img src="img/dicas-fotografia.png" alt="Painel do post sobre fotografia com celular" class="destaques__painel-imagem">
+                        <figcaption class="destaques__painel-texto">Veja dicas de como fotografar usando seu celular</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="destaques__botao botao">Receber destaques por email</a>
+            </section>
+
         </main>
     </body>
 </html>
