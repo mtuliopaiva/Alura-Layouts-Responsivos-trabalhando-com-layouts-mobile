@@ -2,6 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <!-- Viewport - Browser não sabe o tamanho da tela, ele usa a resolução do dispositivo como parametro.
+                   Ele faz uma conversão
+        width=device-width - largura igual a largura do dispositivo
+        inital-scale=1.0 - escala da pagina igual ao do dispostivo. 1.0 para garantir o tamanho inicial da pagina-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Home | Apeperia</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +23,11 @@
         
     </head>
     <body>
-        <header class="cabecalho">
+        <header class="cabecalho conteiner">
             <!-- header>img+nav>ul>li*6>a ATALHO PARA ESCREVER TODA HIERARQUIA DO CODIGO
             header que é mae de img e nav que e mae de ul e assim por diante-->
             <img class="cabecalho__logo" src="img/logo-apeperia.svg" alt="Texto alternativo da logo: Logo da Apeperia">
-            Imagens
+            <!-- Imagens
             PNG - imagem pouco compacto - elevado tamanho
                 - Possível utilizar fundos transparentes
             JPG - Imagem compacto porém qualidade inferior
@@ -31,7 +38,7 @@
                 - Formado por cálculos
                 - Vantagem: Muito mais leve que o PNG
                 - Desvantagem: PNG guarda muito mais informação que o SVG (Péssima transição de cores)
-                - Mais indicado para utilizar em logotipos, icones, imagens/ilustrações mais simples
+                - Mais indicado para utilizar em logotipos, icones, imagens/ilustrações mais simples -->
 
 
             <nav class="cabecalho__navegacao">
@@ -46,10 +53,10 @@
             </nav>
         </header>
         <main>
-            <section class="chamada">
+            <section class="chamada conteiner">
                 <h1 class="chamada__titulo">Aplicativos Na Medida</h1>
                 <p class="chamada__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</p>
-                <a href="#" class="chamada__botao">Conheça os planos</a>
+                <a href="#" class="chamada__botao botao">Conheça os planos</a>
             </section>
         </main>
     </body>
