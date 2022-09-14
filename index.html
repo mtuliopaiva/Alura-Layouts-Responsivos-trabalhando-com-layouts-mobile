@@ -30,7 +30,7 @@
         
     </head>
     <body>
-        <header class="cabecalho conteiner">
+        <header class="cabecalho container">
             <!-- header>img+nav>ul>li*6>a ATALHO PARA ESCREVER TODA HIERARQUIA DO CODIGO
             header que é mae de img e nav que e mae de ul e assim por diante-->
             <img class="cabecalho__logo" src="img/logo-apeperia.svg" alt="Texto alternativo da logo: Logo da Apeperia">
@@ -122,7 +122,7 @@
                     </ul>
                     <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
                 </div>
-                <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
+                <img src="img/sobre-apeperia.png" alt="Sobre Apeperia" class="sobre__imagem">
             </section>
 
             <section class="planos container">
@@ -177,7 +177,9 @@
 
             <section class="institucional container">
                 <h2 class="institucional__titulo">Institucional</h2>
-                <p class="institucional__descricao">Um pouco mais sobre a Apeperia</p>
+                <div class="institucional__conteudo">
+                    <div class="institucional__informacoes">
+                        <p class="institucional__descricao">Um pouco mais sobre a Apeperia</p>
 
                 <!-- Estamos usando a tag br dentro do adress para pular uma linha - fica semantico também -->
                 <!-- Existe um espaçamento entre endereço e informações de contato (email e telefone) para 
@@ -188,17 +190,19 @@
 <!-- 
                 Tag video deixa semantica e é possivel colocar video nela. Controls permite os controles do video (play,stop e tempo) -->
 
-                <adress class="institucional__endereco">Rua Vergueiro, 3185</br>
+                    <adress class="institucional__endereco">Rua Vergueiro, 3185</br>
                     Vila Mariana, São Paulo
-                    <article class="institucional__contato">
-                        <p>
-                            <a href="tel:+55115571-2751" class="institucional__contato-telefone">(11) 5571-2751</a>
-                            ou
-                            <a href="mailto:contato@apeperia.com" class="institucional__contato-email">contato@apeperia.com</a>
-                        </p>
-                    </article>
-                </adress>
+                        <article class="institucional__contato">
+                            <p>
+                                <a href="tel:+55115571-2751" class="institucional__contato-telefone">(11) 5571-2751</a>
+                                ou
+                                <a href="mailto:contato@apeperia.com" class="institucional__contato-email">contato@apeperia.com</a>
+                            </p>
+                        </article>
+                    </adress>
+                </div>
                 <video src="./img/formacao-java.mp4" class="institucional__video" controls></video>
+                </div>
             </section>
 
             <footer class="rodape container">
